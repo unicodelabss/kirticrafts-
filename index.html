@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7c2d4f">
+<title>Kirti Crafts | Handmade Crochet Accessories</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream:"#fffaf6", rose:"#7c2d4f", rose2:"#a84d3b", peach:"#ffede1", gold:"#d99b55"
+      },
+      boxShadow: {
+        soft:"0 18px 55px rgba(91,35,57,.10)",
+        card:"0 8px 28px rgba(91,35,57,.08)"
+      }
+    }
+  }
+}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{background:#fffaf6}
+.pattern{background-image:radial-gradient(rgba(124,45,79,.045) 1px,transparent 1px);background-size:18px 18px}
+.product{transition:.25s ease}
+.product:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(91,35,57,.13)}
+.product img{transition:transform .45s ease}
+.product:hover img{transform:scale(1.045)}
+</style>
+</head>
+<body class="pattern text-stone-900">
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-rose-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-2xl bg-rose text-white grid place-items-center text-xl shadow-card">🧶</div>
+      <div>
+        <div class="text-lg sm:text-xl font-black text-rose">Kirti Crafts</div>
+        <div class="text-[11px] font-semibold text-stone-500">Handmade Accessories</div>
+      </div>
+    </a>
+    <a href="#products" class="bg-rose text-white px-4 py-2.5 rounded-full font-extrabold text-sm hover:bg-rose2 transition">Shop Now ↘</a>
+  </div>
+</header>
+
+<main>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10">
+  <div class="overflow-hidden rounded-[2rem] bg-gradient-to-br from-peach via-white to-orange-50 border border-rose-100 shadow-soft p-6 sm:p-10 lg:p-14">
+    <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-8 lg:gap-12 items-center">
+      <div>
+        <span class="inline-flex px-3 py-1.5 rounded-full bg-white border border-rose-100 text-rose text-xs font-black uppercase tracking-widest">100% Handmade • Made with Love</span>
+        <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.02] tracking-tight text-rose">
+          Little handmade pieces.<br>
+          <span class="text-stone-900">Big happiness.</span>
+        </h1>
+        <p class="mt-5 text-stone-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          Discover colorful crochet hair ties, bows and accessories, lovingly handmade for everyday style and gifting.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#products" class="bg-rose text-white px-5 py-3 rounded-full font-black shadow-card hover:bg-rose2 transition">Explore Products</a>
+          <a href="https://wa.me/919999911111" target="_blank" rel="noopener" class="bg-white border border-rose-200 text-rose px-5 py-3 rounded-full font-black hover:bg-rose-50 transition">💬 WhatsApp Us</a>
+        </div>
+        <div class="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold text-stone-600">
+          <span>✓ Custom orders</span><span>✓ Handmade with love</span><span>✓ Pan-India shipping</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 sm:gap-4">
+        <div class="rounded-3xl overflow-hidden bg-white shadow-card aspect-square"><img src="assets/product-1.jpg" class="w-full h-full object-cover" alt="Purple butterfly hair tie"></div>
+        <div class="rounded-3xl overflow-hidden bg-white shadow-card aspect-square translate-y-6"><img src="assets/product-4.jpg" class="w-full h-full object-cover" alt="Pink crochet bow"></div>
+        <div class="rounded-3xl overflow-hidden bg-white shadow-card aspect-square"><img src="assets/product-7.jpg" class="w-full h-full object-cover" alt="Red crochet flower"></div>
+        <div class="rounded-3xl overflow-hidden bg-white shadow-card aspect-square translate-y-6"><img src="assets/product-5.jpg" class="w-full h-full object-cover" alt="White floral crochet accessory"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+  <div class="text-center max-w-2xl mx-auto">
+    <p class="text-rose font-black uppercase tracking-[.22em] text-xs">Handmade collection</p>
+    <h2 class="text-3xl sm:text-4xl font-black mt-2 text-stone-900">Choose your favourite</h2>
+    <p class="text-stone-500 mt-2">Like a product? Tap <b>Buy Now</b> and continue directly on WhatsApp.</p>
+  </div>
+
+  <div id="filters" class="mt-7 flex justify-center gap-2 flex-wrap">
+    <button class="filter active px-4 py-2 rounded-full bg-rose text-white font-bold text-sm" data-filter="All">All</button>
+    <button class="filter px-4 py-2 rounded-full bg-white border border-rose-100 text-rose font-bold text-sm" data-filter="Butterflies">Butterflies</button>
+    <button class="filter px-4 py-2 rounded-full bg-white border border-rose-100 text-rose font-bold text-sm" data-filter="Bows">Bows</button>
+    <button class="filter px-4 py-2 rounded-full bg-white border border-rose-100 text-rose font-bold text-sm" data-filter="Floral">Floral</button>
+  </div>
+
+  <div id="productGrid" class="mt-8 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"></div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+  <div class="grid sm:grid-cols-3 gap-4">
+    <div class="bg-white rounded-3xl border border-rose-100 p-5 shadow-card"><div class="text-2xl">🪡</div><h3 class="font-black mt-3">Thoughtfully handmade</h3><p class="text-sm text-stone-500 mt-1">Every piece is crafted with care and its own handmade character.</p></div>
+    <div class="bg-white rounded-3xl border border-rose-100 p-5 shadow-card"><div class="text-2xl">🎁</div><h3 class="font-black mt-3">Perfect for gifting</h3><p class="text-sm text-stone-500 mt-1">Cute, personal accessories made to bring a smile.</p></div>
+    <div class="bg-white rounded-3xl border border-rose-100 p-5 shadow-card"><div class="text-2xl">🚚</div><h3 class="font-black mt-3">Pan-India shipping</h3><p class="text-sm text-stone-500 mt-1">Message us on WhatsApp to confirm your order and delivery.</p></div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pb-14">
+  <div class="rounded-[2rem] bg-rose text-white p-7 sm:p-10 text-center shadow-soft">
+    <div class="text-4xl">🧶</div>
+    <h2 class="mt-3 text-2xl sm:text-3xl font-black">Found something you love?</h2>
+    <p class="mt-2 text-white/75">Order it directly through WhatsApp. No cart, no complicated checkout.</p>
+    <a href="https://wa.me/919999911111" target="_blank" rel="noopener" class="inline-flex mt-6 bg-white text-rose px-6 py-3 rounded-full font-black hover:bg-rose-50 transition">💬 Order on WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-rose-100 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-7 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <div><div class="font-black text-rose">Kirti Crafts</div><div class="text-xs text-stone-500 mt-1">Handmade Accessories • Crochet Your Joy</div></div>
+    <div class="text-xs text-stone-400">© 2026 Kirti Crafts</div>
+  </div>
+</footer>
+
+<script>
+const PRODUCTS = [{"id": 1, "name": "Purple Butterfly Hair Tie", "category": "Butterflies", "price": 149, "image": "assets/product-1.jpg", "desc": "Handmade crochet butterfly with colorful floral charms."}, {"id": 2, "name": "Sunflower Dangle Hair Tie", "category": "Floral", "price": 149, "image": "assets/product-2.jpg", "desc": "Bright sunflower-inspired crochet accessory."}, {"id": 3, "name": "Sunflower Charm Hair Tie", "category": "Floral", "price": 149, "image": "assets/product-3.jpg", "desc": "Cheerful handmade sunflower with soft yarn texture."}, {"id": 4, "name": "Pink Bow Hair Tie", "category": "Bows", "price": 129, "image": "assets/product-4.jpg", "desc": "Cute pink crochet bow with dangling flower charms."}, {"id": 5, "name": "White Floral Charm", "category": "Floral", "price": 139, "image": "assets/product-5.jpg", "desc": "Delicate white crochet flower with colorful accents."}, {"id": 6, "name": "Purple Flower Hair Tie", "category": "Floral", "price": 139, "image": "assets/product-6.jpg", "desc": "Playful layered flower with a soft crochet finish."}, {"id": 7, "name": "Red Flower Hair Tie", "category": "Floral", "price": 139, "image": "assets/product-7.jpg", "desc": "Bold red handmade flower with a contrasting center."}, {"id": 8, "name": "Pink Butterfly Charm", "category": "Butterflies", "price": 149, "image": "assets/product-8.jpg", "desc": "Pretty pink butterfly with colorful crochet flower charms."}, {"id": 9, "name": "White & Pink Floral Tie", "category": "Floral", "price": 139, "image": "assets/product-9.jpg", "desc": "Elegant white crochet flower with a rich pink center."}];
+const WHATSAPP_NUMBER = "919999911111";
+let activeFilter = "All";
+
+function money(n) {
+  return "₹" + Number(n).toLocaleString("en-IN");
+}
+
+function renderProducts() {
+  const grid = document.getElementById("productGrid");
+  const items = activeFilter === "All" ? PRODUCTS : PRODUCTS.filter(p => p.category === activeFilter);
+
+  grid.innerHTML = items.map(p => `
+    <article class="product bg-white rounded-3xl overflow-hidden border border-rose-100 shadow-card">
+      <div class="aspect-square bg-peach overflow-hidden">
+        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-3.5 sm:p-4">
+        <div class="text-[10px] uppercase tracking-widest font-black text-rose/70">${p.category}</div>
+        <h3 class="mt-1 font-black text-sm sm:text-base leading-tight">${p.name}</h3>
+        <p class="hidden sm:block text-xs text-stone-500 mt-1.5 leading-relaxed">${p.desc}</p>
+        <div class="mt-3 flex items-center justify-between gap-2">
+          <span class="font-black text-rose">${money(p.price)}</span>
+          <button type="button" onclick="buyNow(${p.id})" class="bg-rose text-white px-3 py-2 rounded-xl font-black text-xs sm:text-sm hover:bg-rose2 transition">
+            Buy Now ↗
+          </button>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+function buyNow(id) {
+  const p = PRODUCTS.find(x => x.id === id);
+  if (!p) return;
+  const text =
+`Hi Kirti Crafts! 👋
+
+I would like to order this product:
+
+🧶 ${p.name}
+💰 Price: ${money(p.price)}
+
+Please share availability and ordering details. Thank you!`;
+  const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text);
+  window.open(url, "_blank", "noopener");
+}
+
+document.querySelectorAll(".filter").forEach(button => {
+  button.addEventListener("click", () => {
+    activeFilter = button.dataset.filter;
+    document.querySelectorAll(".filter").forEach(b => {
+      b.classList.remove("bg-rose","text-white");
+      b.classList.add("bg-white","text-rose","border","border-rose-100");
+    });
+    button.classList.add("bg-rose","text-white");
+    button.classList.remove("bg-white","text-rose","border","border-rose-100");
+    renderProducts();
+  });
+});
+
+renderProducts();
+</script>
+</body>
+</html>
